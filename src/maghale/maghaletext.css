@@ -1,0 +1,25 @@
+.p-maghale-text{
+    font-family: vazir;
+    line-height: 4rem;
+    text-align: right;
+    direction: rtl;
+}
+
+.title-maghale-text{
+text-align: right;
+color: rgb(39, 39, 155);
+font-size: 1.5rem;
+margin: 3rem 3rem 3rem 3rem;
+font-family: vazir;
+}
+@media (max-width:766px) {
+    .p-maghale-text{
+
+        text-align: center;
+    }.title-maghale-text{
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 1rem;
+       
+        }
+}

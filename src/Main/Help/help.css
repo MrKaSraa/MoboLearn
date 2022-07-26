@@ -1,0 +1,32 @@
+.icon-help{
+    height: 4.5rem ;
+    width: 4.5rem;
+    margin-left: 1rem;
+}   
+.help-div:hover{
+      transform: translateY(-10px);
+transition: all .3s ease;
+}
+.help-div{
+    display: flex;
+    width: 320px;
+    font-family: vazir;
+    justify-content: right;
+    margin-top: 2rem;
+}
+@media (max-width:410px) {
+    .help-div{
+    
+        width: 300px;
+        padding: 1rem;
+    }.info-help{
+        font-size: .9rem;
+    }
+}
+@media (max-width:710px) {
+    .help-title{
+        text-align: center;
+    }.producs-title{
+        text-align: center;
+    }
+}

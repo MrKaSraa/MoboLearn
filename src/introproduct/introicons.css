@@ -1,0 +1,39 @@
+.div-icon-intro{
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    font-family: vazir;
+    justify-content: space-between;
+ }
+ 
+ .icon-intro{
+     width: 3rem !important;
+     height: 3rem !important;
+     margin-left: 1rem;
+     color: rgb(73, 46, 194);
+ }
+@media (max-width:767px) {
+    .icons-intro{
+        margin-bottom: 2rem;
+    }.div-icon-intro{
+        text-align: center;
+       
+    }
+}
+.icon-intro:hover{
+    color: black;
+  
+   
+   
+}.div-icon-intro:hover{
+     transform: translateY(-3px);
+    transition: all .3s ease;
+}
+
+
+@media (max-width:500px) {
+  
+.div-icon-intro{
+ 
+}
+}

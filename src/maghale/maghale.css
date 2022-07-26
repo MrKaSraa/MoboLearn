@@ -1,0 +1,41 @@
+.img-maghale-text-div{
+    display: flex;
+    justify-content: center;
+}
+
+.img-java-maghale{
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+
+.artcli-maghale{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+
+@media (max-width:766px) {
+    .artcli-maghale{
+        display: grid;
+        justify-content: space-evenly;
+    }.footer-maghale-text{
+        text-align: center !important;
+      
+        margin: 1rem;
+    }
+}
+
+.footer-maghale-text{
+    text-align: right;
+color: rgb(39, 39, 155);
+font-size: 1.5rem;
+margin: 3rem 3rem 3rem 3rem;
+font-family: vazir;
+}
+
+.img-maghale-text-border{
+    border: none !important;
+    border-radius: 30px;
+}

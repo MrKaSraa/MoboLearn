@@ -1,0 +1,78 @@
+.icon-star{
+    display: flex;
+    color: orange;
+    padding-top: .3rem;
+}
+
+.modares-div{
+    display: flex;
+    justify-content: space-between;
+}.price-div{
+    display: flex;
+    justify-content: space-between;
+}
+.modares{
+    display: flex;
+   
+}.modares-div{
+     margin: 1rem;
+}.price-div{
+    margin: 1rem;
+}
+.products{
+    width: 320px;
+margin-bottom: 2rem;
+    font-family: vazir;
+}
+.producs-title{
+    font-family: vazir;
+    font-family: vazir;
+   text-align: right;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid black;
+    padding-left: 3rem;
+    padding-right:4rem;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+
+}
+.icon-teacher{
+    margin: .2rem  .4rem  .2rem  .2rem;
+}.icon-people{
+    margin: .2rem  .4rem  .2rem  .2rem;
+}.people{
+    display: flex;
+
+}
+.img-product{
+    width: 100% !important;
+    border-radius: 30px;
+    height: 170px;
+}
+.price-div{
+    display: flex;
+    justify-content: space-between;
+}
+.title-product{
+    text-align: right;
+    padding-right: 1.5rem;
+}
+@media (max-width:349px) {
+    .products{
+        margin-right: 1rem;
+        margin-left: 1rem;
+        width: 275px;
+    }
+}
+
+.product-backend{
+display: flex;
+justify-content: space-evenly;
+}
+
+@media (max-width:768px) {
+    .product-backend{
+        display: grid;
+justify-content: space-evenly;
+    }
+}

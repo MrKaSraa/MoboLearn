@@ -1,0 +1,45 @@
+.formLogin{
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;
+    border: .5px solid black;
+    width: 400px;
+    margin-left: auto !important;
+    margin-right:auto !important;
+    padding: 1rem;
+    height: 100%;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 4rem;
+
+}
+.not-mem{
+    display: flex;
+    justify-content: center;
+    direction: rtl;
+    font-family: vazir;
+}
+.login-title{
+    text-align: center;
+}
+
+.inputform{
+    border: 1px solid black;
+    margin-top: 1rem;
+    font-family: vazir;
+    direction: rtl;
+    padding: .7rem;
+    border-radius: 10px;
+   width: 300px !important;
+}
+.btn-log{
+    font-family: vazir;
+}
+
+@media (max-width:350px) {
+    .formLogin{
+        width: 300px;
+    }.inputform{
+        width: 200px !important;
+    }
+}

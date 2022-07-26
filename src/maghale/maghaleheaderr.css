@@ -1,0 +1,70 @@
+.img-maghale-header-div{
+    display: flex;
+    justify-content: center;
+}
+.maghaleheaderr-title{
+    text-align: center;
+    direction: rtl;
+    font-size: 1.4rem;
+    font-family: vazir;
+    margin-top: 3rem;
+}
+
+.img-maghale-header{
+    width:700px;
+}
+@media (max-width:766px) {
+    .img-maghale-header{
+    width:100%;
+}.maghaleheaderr-title{
+    font-size: 1.022223rem;
+    padding: 1rem;
+}.icon-maghale-star{
+    width: 1.5rem !important;
+    height:1.5rem !important;
+    margin-top: .3rem;
+}.maghale-star p{
+    padding-top: 0;
+}.text-maghale-header{
+    text-align: center;
+}
+
+}
+
+.maghale-star{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.icon-maghale-star{
+     color: orange;
+     width: 2rem;
+     height: 2rem;
+}
+.maghale-star-div{
+     display: flex;
+    justify-content: right;
+    align-items: center;
+}
+.maghale-star p {
+    margin-right: 2rem;
+    font-family: vazir;
+    font-size: 1.2rem;
+    direction: rtl;
+    padding-top: .2rem;
+}
+.text-maghale-header{
+    text-align: right;
+    line-height: 3.5rem;
+    font-family: vazir;
+}
+.text-maghale-header p {
+    direction: rtl;
+}
+
+@media (max-width:766px) {
+   .text-maghale-header p{
+    margin-top: 2rem;
+    text-align: center;
+   } 
+}
