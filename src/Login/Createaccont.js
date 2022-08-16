@@ -2,7 +2,10 @@ import React from 'react'
 import { Link } from 'react-router-dom'
 export default function Createaccont() {
   return (
-    <form className='formLogin' action="">
+    <div className='form-bg2'>
+      <br />
+      <br />
+      <form className='formLogin' action="">
     <div className="login-title">
     <h4>ساخت اکانت</h4>
    </div>
@@ -17,5 +20,7 @@ export default function Createaccont() {
     </div>
 
    </form>
+    </div>
+    
   )
 }

@@ -249,6 +249,6 @@ margin-bottom: 4rem;
 }
 @media(max-width:350px){
     .main-icon2{
-        display: none;
+        padding-left: 0.4rem;
     }
 }

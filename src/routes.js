@@ -1,36 +1,19 @@
 
 
-import Html from './Front-end/Html/Html'
+import Account from './Nullpage/Account'
 import Main from './Main/Main'
-import Css from './Front-end/Css/Css'
-import Payton from'./Back-end/Payton'
-import Django from './Back-end/Django'
-import Javaarticle from './maghale/Javaarticle'
+import Articlepage from './ArticlePage/Articlepage'
+import Cart from './Nullpage/Cart'
 import Login from './Login/Login'
-import Uiuxaricle from './maghale/Uiuxaricle'
+import Order from './Nullpage/Order'
 import Createaccont from './Login/Createaccont'
 import Emailbox from './Emailbox/Emailbox'
+import Productpage from './Productpage/Productpage'
 const routes =[
    {
     path:'/',element:<Main/>
    },
-    {
-        path:'/Html',element:<Html/>
-    },
-    {
-        path:'/Css',element:<Css/>
-    },
-    {
-        path:'/Payton',element:<Payton/>
-    },  {
-        path:'/Django',element:<Django/>
-    },
-    {
-        path:'/javaarticle',element:<Javaarticle/>
-    },
-    {
-        path:'/Uiuxaricle',element:<Uiuxaricle/>
-    },
+    
     {
         path:'/Login',element:<Login/>
     },
@@ -41,8 +24,21 @@ const routes =[
         path:'/Emailbox',element:< Emailbox/>
     },
   
-   
-  
+    {
+        path:'/product:productid' ,element:<Productpage/>
+     }, 
+     {
+        path:'/article/:articleid' ,element:<Articlepage/>
+     }, 
+     {
+        path:'/Account' ,element:<Account/>
+     }, 
+     {
+        path:'/Cart' ,element:<Cart/>
+     }, 
+     {
+        path:'/Order' ,element:<Order/>
+     }, 
 ]
 
 

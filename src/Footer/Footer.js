@@ -23,16 +23,18 @@ export default function Footer() {
   
    <div className="footerlinks">
        <div className="footer-link-1">
-        <Link className='link-footer-class' to='/Html'>آموزش Html</Link>
-        <Link className='link-footer-class' to='/Payton'>آموزش Payton</Link>
+          <Link className='link-footer-class' to='/'>صفحه اصلی</Link>
+        <Link className='link-footer-class' to='/product4'>آموزش Html</Link>
+        <Link className='link-footer-class' to='/product2'>آموزش Payton</Link>
         <Link className='link-footer-class' to='/Login'>ورود / ثبت نام</Link>
-        <Link className='link-footer-class' to='/'>صفحه اصلی</Link>
+      
        </div>
        <div className="footer-link-2">
-       <Link className='link-footer-class' to='/Css'>آموزش Css</Link>
-       <Link className='link-footer-class' to='/Django'>آموزش Django</Link>
-       <Link className='link-footer-class' to='/Emailbox'>ارتباط با ما</Link>
-       <Link className='link-footer-class' to='/Css'> تیم ما</Link>
+         <Link className='link-footer-class' to='/Emailbox'>ارتباط با ما</Link>
+       <Link className='link-footer-class' to='/product3'>آموزش Css</Link>
+       <Link className='link-footer-class' to='/product1'>آموزش Django</Link>
+      
+       <Link className='link-footer-class' to='/Account'> حساب من</Link>
         </div>
     
         </div>

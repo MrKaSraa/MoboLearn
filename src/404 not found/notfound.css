@@ -1,0 +1,31 @@
+
+
+
+  @media screen and (max-width:768px) {
+   
+   
+  } 
+
+  .text-not-found{
+    text-align: center !important;
+ 
+  }
+  .btn{
+    font-family: vazir;
+  }
+
+  .btn-not-found{
+    display: flex !important;
+    justify-content: center;
+  }
+  .eror-text{
+    display: grid !important;
+    justify-content: center !important;
+    text-align: center !important;
+    font-family: vazir;
+
+  }
+  .eror-title{
+    font-size: 3.5rem !important;
+    font-family: cursive;
+  }

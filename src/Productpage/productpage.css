@@ -1,0 +1,112 @@
+
+
+.icons-intros{
+    display:flex;
+    justify-content:space-evenly; 
+   
+}
+
+
+.div-icon-intro{
+    display: flex;
+    align-items: center;
+    direction: rtl;
+    font-family: vazir;
+   justify-content: space-evenly;
+   background-color: rgba(136, 131, 131, 0.3);
+   padding: 1rem;
+   border-radius: 30px;
+   border:dashed 1px black;
+   width:300px !important;
+   margin-right: 1rem;
+   transition: all .3s ease;
+ }
+
+.div-icon-intro:hover{
+    transform: translateY(-3px);
+
+}
+
+@media (max-width:767px) {
+    .div-icon-intro{
+          text-align: center;
+         
+      }.icons-intros{
+          display:grid !important;
+          justify-content:center;
+      }.icons-intro{
+          margin-bottom:2rem;
+      }.div-icon-intro{
+          margin-bottom: 2rem;
+          justify-content: space-around;
+          margin-right: 0rem;
+      }
+  }
+
+  .icon-intro{
+    width: 3rem !important;
+   height: 3rem !important;
+   margin-left: 1rem;
+   color: rgb(73, 46, 194);
+}
+
+.p-icon-intro{
+  text-align: center;
+}
+
+
+
+
+.img-intro{
+    width:400px;
+    height:250px;
+    border-radius: 30px; 
+   transition: all .5s ease;
+   margin-left: 2rem !important;
+}
+.img-intro:hover{
+    transform: scale(1.1,1.1);
+    cursor: pointer;
+ 
+}
+
+@media (max-width:1000px) {
+    .img-intro{
+        width:300px;
+        margin-left: 0rem !important;
+        height:200px;
+    }.introduction{
+        display:grid !important;
+        justify-content:center;
+        width: 100% !important;
+    }.img-intro-div{
+        display:grid;
+        justify-content:center;
+        margin-bottom: 2rem;
+    }.text-intro p{
+        padding-left:1rem !important;
+        padding-right:1rem !important;
+    }.text-intro{
+        text-align: center;
+        line-height: 3rem;
+    }
+}
+
+.introduction{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+.text-intro{
+    text-align: right;
+    direction: rtl;
+    line-height: 2.5rem;
+    font-family: vazir;
+    color: black;
+}
+.text-intro p{
+    padding-left: 3rem;
+}
+.img-text{
+    width: 100%;
+}

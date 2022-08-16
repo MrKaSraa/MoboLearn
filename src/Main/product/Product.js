@@ -41,7 +41,8 @@ export default function Product(props) {
                     <BsFillPeopleFill className='icon-people'/>
                 </div>
               </div>
-              <Link to={props.product_link} className='btn btn-dark btn-block w-100'>اطلاعات بیشتر</Link >
+            
+              <Link className='btn btn-dark btn-block w-100' to={`/product${props.id}` }>مشخصات</Link>
             </div>
         </div>
     </div>

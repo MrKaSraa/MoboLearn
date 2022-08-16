@@ -6,8 +6,6 @@
     
 }
 .footer-div{
-  
-    margin-top: 8rem; 
     border-top: 1px solid black;
   padding: 1.5rem;
     display: flex;
@@ -52,9 +50,6 @@ text-align: center;
 .icon-footer:hover{
     color: rgb(71, 71, 163);
 
-}
-.number-footer{
-    color: rgb(71, 71, 163);
 }
 
 .footer-akhar{

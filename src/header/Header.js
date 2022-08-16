@@ -33,11 +33,11 @@ export default function Header() {
     <div >
     <div className="header-1 ">
   <div className="link-header1">   
-       <Link to='/Emailbox'  className="link-hed link-hed-log"> تماس با ما </Link>
-        <a href='#'  className="link-hed"> وبلاگ </a >
+       <Link to='/Emailbox'  className="link-hed "> تماس با ما </Link>
+        
      
-        <a href='#'  className="link-hed">حساب من </a >
-        <Link to='/Createaccont'  className="link-hed link-hed-log"><span> <BsFillPersonFill className="icon-hed-1" />ورود/ثبت نام</span></Link >
+        <Link to='/Account'  className="link-hed">حساب من </Link >
+        <Link to='/Createaccont'  className="link-hed "><span> <BsFillPersonFill className="icon-hed-1" />ورود/ثبت نام</span></Link >
         </div>
       
 
@@ -52,17 +52,17 @@ export default function Header() {
 
   typewriter
    
-  .typeString("به فروشگاه ما خوش آمدید")
+  .typeString("به آکادمی ما خوش آمدید")
     
   .pauseFor(1000)
   .deleteAll()
-  .typeString("به فروشگاه ما خوش آمدید")
+  .typeString("به آکادمی ما خوش آمدید")
   .pauseFor(1000)
   .deleteAll()
-  .typeString("به فروشگاه ما خوش آمدید")
+  .typeString("به آکادمی ما خوش آمدید")
   .pauseFor(1000)
   .deleteAll()
-  .typeString("به فروشگاه ما خوش آمدید")
+  .typeString("به آکادمی ما خوش آمدید")
   .pauseFor(1000)
 
   .start();
@@ -83,29 +83,29 @@ export default function Header() {
 
       <Offcanvas show={show} onHide={handleClose}>
         <Offcanvas.Header closeButton>
-          <Offcanvas.Title>menu</Offcanvas.Title>
+          <Offcanvas.Title>منو</Offcanvas.Title>
         </Offcanvas.Header>
         <Offcanvas.Body>
     <div className="Offcanvas">
     <div className="icon-off">
-   <FaShoppingBag   />
-    <a href='#' className="p-icon-hed-2">سبد خرید</a>
+    <AiOutlineHome   />
+    <Link onClick={()=>setShow(false)} to='/' className="p-icon-hed-1">صفحه اصلی</Link>
  
    </div><hr />
    <div className="icon-off">
    <AiOutlineShoppingCart   />
-    <a href='#' className="p-icon-hed-2">سفارش ها</a>
+    <Link onClick={()=>setShow(false)} to='/Order' className="p-icon-hed-2">سفارش ها</Link>
  
    </div><hr />
    <div className="icon-off">
-   <AiOutlineHome   />
-    <Link to='/' className="p-icon-hed-2">صفحه اصلی</Link>
- 
+  
+ <FaShoppingBag   />
+    <Link onClick={()=>setShow(false)} to='/Cart' className="p-icon-hed-2">سبد خرید</Link>
    </div>
    <hr />
    <div className="icon-off">
    <FiLogIn   />
-    <Link to='/Login' className="p-icon-hed-2">ورود/ثبت نام</Link>
+    <Link onClick={()=>setShow(false)} to='/Login' className="p-icon-hed-2">ورود/ثبت نام</Link>
  
    </div>
    <hr />
@@ -115,8 +115,8 @@ export default function Header() {
       </Dropdown.Toggle>
 <hr />
       <Dropdown.Menu className='drop-menu2'>
-        <Link to='/Html' href="#/action-1">Html</Link ><br />
-        <Link to='/Css' href="#/action-2">Css</Link >
+        <Link onClick={()=>setShow(false)} className='drop-offcenvas' to='/product4' >Html</Link ><br />
+        <Link onClick={()=>setShow(false)} className='drop-offcenvas' to='/product3'>Css</Link >
      
       </Dropdown.Menu>
     </Dropdown><hr />
@@ -126,8 +126,8 @@ export default function Header() {
       </Dropdown.Toggle>
 
       <Dropdown.Menu className='drop-menu2'>
-        <Link to='/Django'href="#/action-1">django</Link><br />
-        <Link to='/Payton'href="#/action-2">payton</Link>
+        <Link onClick={()=>setShow(false)} className='drop-offcenvas' to='/product1'>Django</Link><br />
+        <Link onClick={()=>setShow(false)} className='drop-offcenvas' to='/product2'>Payton</Link>
      
       </Dropdown.Menu>
     </Dropdown>
@@ -147,12 +147,12 @@ export default function Header() {
 <div className='icons-hed-2'>
    <div className="icon-hed-2">
    <FaShoppingBag   /><br />
-    <a href='#' className="p-icon-hed-2">سبد خرید</a>
+    <Link to='/Cart' className="p-icon-hed-2">سبد خرید</Link>
  
    </div>
    <div className="icon-hed-2">
    <AiOutlineShoppingCart   /><br />
-    <a href='#' className="p-icon-hed-2">سفارش ها</a>
+    <Link to='/Order' className="p-icon-hed-2">سفارش ها</Link>
  
    </div>
   
@@ -166,44 +166,44 @@ export default function Header() {
       <div className='dropdown'>
     
 
-    <Dropdown dir='rtl'>
+    <Dropdown className='Dropdown' dir='rtl'>
       <Dropdown.Toggle variant="light" id="dropdown-split-basic">
        <span className='px-2 span-dropdown'>بک اند</span>
       </Dropdown.Toggle>
 
       <Dropdown.Menu className="drop-menu">
-        <Link to='/Payton' className='DropdownItem '  href="#/action-1">payton</Link ><br />
-        <Link to='/Django' className='DropdownItem '  href="#/action-2">django</Link >
+        <Link  to='/product2' className='DropdownItem '  >payton</Link ><br />
+        <Link   to='/product1' className='DropdownItem ' >django</Link >
   
       </Dropdown.Menu>
     </Dropdown>
-    <Dropdown dir='rtl'>
+    <Dropdown className='Dropdown' dir='rtl'>
       <Dropdown.Toggle variant="light" id="dropdown-split-basic">
        <span className='px-2 span-dropdown'>فرانت اند</span>
       </Dropdown.Toggle>
 
       <Dropdown.Menu className="drop-menu">
-        <Link to='/Html' className='DropdownItem ' >Html</Link><br />
-        <Link to='/Css' className='DropdownItem ' >Css</Link>
+        <Link  to='/product4' className='DropdownItem ' >Html</Link><br />
+        <Link  to='/product3' className='DropdownItem ' >Css</Link>
       
       </Dropdown.Menu>
     </Dropdown>
 
-    <Dropdown dir='rtl'>
+    <Dropdown className='Dropdown' dir='rtl'>
       <Dropdown.Toggle variant="light" id="dropdown-split-basic">
        <span className='px-2 span-dropdown'>مقالات </span>
       </Dropdown.Toggle>
 
       <Dropdown.Menu className="drop-menu">
-        <Link to='/Uiuxaricle' className='DropdownItem ' >  ui و ux</Link><br />
-        <Link to='/javaarticle' className='DropdownItem ' >   جاوا اسکریپت</Link>
+        <Link to='/article/2' className='DropdownItem ' >  ui و ux</Link><br />
+        <Link to='/article/1' className='DropdownItem ' >   جاوا اسکریپت</Link>
       
       </Dropdown.Menu>
     </Dropdown>
   
 
       </div>
-      <Link to='/' className='link-hed-safe' >صفحه اصلی</Link>
+      <Link to='/' className='link-hed-safe mx-2' >صفحه اصلی</Link>
       <img src="https://unity.com/logo-unity-web.png" className='img-hed-new' width={150} alt="" />
        
         </div>
@@ -214,57 +214,6 @@ export default function Header() {
 
 
 
-
-
-
-    {/* <Navbar dir='rtl' bg="light" expand="lg">
-      <Container fluid>
-        <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
-        <Navbar.Toggle aria-controls="navbarScroll" />
-        <Navbar.Collapse dir='rtl' id="navbarScroll">
-          <Nav   className="me-auto my-2 my-lg-0"  style={{ maxHeight: '100px' }}   navbarScroll  >
-          <Dropdown dir="rtl" as={ButtonGroup}>
-      <Button variant="light">مقالات</Button>
-
-      <Dropdown.Toggle dir='rtl' split variant="light" id="dropdown-split-basic" />
-
-      <Dropdown.Menu className="drop-menu">
-        <Dropdown.Item href="#/action-1">Action</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Another action</Dropdown.Item>
-        <Dropdown.Item href="#/action-3">Something else</Dropdown.Item>
-      </Dropdown.Menu>
-    </Dropdown>
-
-    <Dropdown className="px-3" dir="rtl" as={ButtonGroup}>
-      <Button variant="light">بک اند</Button>
-
-      <Dropdown.Toggle dir='rtl' split variant="light" id="dropdown-split-basic" />
-
-      <Dropdown.Menu className="drop-menu">
-        <Dropdown.Item href="#/action-1">Payton</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Django</Dropdown.Item>
-      
-      </Dropdown.Menu>
-    </Dropdown>
-
-    <Dropdown dir="rtl" as={ButtonGroup}>
-      <Button variant="light">فرانت اند</Button>
-
-      <Dropdown.Toggle dir='rtl' split variant="light" id="dropdown-split-basic" />
-
-      <Dropdown.Menu className="drop-menu">
-        <Dropdown.Item href="#/action-1">Html</Dropdown.Item>
-        <Dropdown.Item href="#/action-2">Css</Dropdown.Item>
-    
-      </Dropdown.Menu>
-    </Dropdown>
-
-           
-          </Nav>
-       
-        </Navbar.Collapse>
-      </Container>
-    </Navbar> */}
 
 
     </div>

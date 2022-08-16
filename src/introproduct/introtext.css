@@ -3,7 +3,7 @@
     font-family: vazir;
     color: rgb(41, 41, 160);
     font-size: 1.5rem;
-    margin-top: 2rem;
+    
     direction: rtl;
     margin-right:4rem;
 }
@@ -14,12 +14,17 @@
     line-height: 4rem;
     direction: rtl;
     text-align: right;
+    padding-right: 2rem;
+    padding-left: 2rem;
 }
-
+.img-textintro{
+    display: grid;
+    justify-content: center;
+}
 
 .img-text-intro{
     height: 500px;
-    width: 80%;
+    width: 100%;
    
     margin-top:3rem;
     border-radius: 50px;
@@ -31,7 +36,7 @@
 
 @media (max-width:340px) {
     .img-text-intro{
-        width: 100%;
+        width: 300px;
         height: 200px !important;
       
     }
@@ -44,5 +49,23 @@
      
         height:300px ;
       
+    }.text-intro-text{
+        text-align: center !important;
+    }.text-intro{
+        text-align: center !important;
+        line-height: 3rem !important;
     }
+}
+.mt-6{
+    margin-top: 4rem;
+}
+@media (min-width:1000px) {
+    .text-intro{
+        padding-left: 2rem;
+        padding-right:2rem;
+    }
+}
+
+.mt-8{
+    margin-top: 5rem;
 }

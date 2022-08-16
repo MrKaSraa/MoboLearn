@@ -11,8 +11,8 @@ export default function Article(props) {
 <p className='p-article'>{props.title_article}</p>
 <p dir='rtl' className='p-2-article'>{props.info_article}</p>
 
-<Link to={props.link_article} className='btn btn-dark btn-block w-100' >بیشتر بخوانید</Link>
 
+<Link className='btn btn-dark btn-block w-100' to={`/article/${props.id}` }>بیشتر بخوانید</Link>
     </div>
   )
 }
